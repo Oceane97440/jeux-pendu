@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
   <title>Jeux du Pendu</title>
 
@@ -19,64 +20,66 @@
     <div class="rows">
 
       <h1>Jeu du pendu :</h1>
-      <p>Tentez de deviner le mot secret en entrant des lettres une par une au clavier. Ne gaspillez pas vos coups, car si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.
+      <p>Tentez de deviner le mot secret en entrant des lettres une par une au clavier. Ne gaspillez pas vos coups, car
+        si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.
 
       </p>
-    <div class="btn-toolbar">
-      <div class="btn-group btn-group-sm">
+      <div class="btn-toolbar">
+        <div class="btn-group btn-group-sm">
 
-        <div class="rows">
-        <button class="btn btn-default" value="A" id="A" onclick="afficher('A')">A</button>
-        <button class="btn btn-default" value="B" onclick="afficher('B')">B</button>
-        <button class="btn btn-default" value="C" onclick="afficher('C')">C</button>
-        <button class="btn btn-default" value="D" onclick="afficher('D')">D</button>
-        <button class="btn btn-default" value="E" onclick="afficher('E')">E</button>
-        <button class="btn btn-default" value="F" onclick="afficher('F')">F</button>
-        <button class="btn btn-default" value="G" onclick="afficher('G')">G</button>
-        <button class="btn btn-default" value="H" onclick="afficher('H')">H</button>
-        <button class="btn btn-default" value="I" onclick="afficher('I')">I</button>
-        <button class="btn btn-default" value="J" onclick="afficher('J')">J</button>
+          <div class="rows">
+            <button class="btn btn-default" value="A" id="A" onclick="afficher('A')">A</button>
+            <button class="btn btn-default" value="B" onclick="afficher('B')">B</button>
+            <button class="btn btn-default" value="C" onclick="afficher('C')">C</button>
+            <button class="btn btn-default" value="D" onclick="afficher('D')">D</button>
+            <button class="btn btn-default" value="E" onclick="afficher('E')">E</button>
+            <button class="btn btn-default" value="F" onclick="afficher('F')">F</button>
+            <button class="btn btn-default" value="G" onclick="afficher('G')">G</button>
+            <button class="btn btn-default" value="H" onclick="afficher('H')">H</button>
+            <button class="btn btn-default" value="I" onclick="afficher('I')">I</button>
+            <button class="btn btn-default" value="J" onclick="afficher('J')">J</button>
 
-        <button class="btn btn-default" value="K" onclick="afficher('K')">K</button>
-        <button class="btn btn-default" value="L" onclick="afficher('L')">L</button>
-        <button class="btn btn-default" value="M" onclick="afficher('M')">M</button>
-        <button class="btn btn-default" value="N" onclick="afficher('N')">N</button>
-        <button class="btn btn-default" value="O" onclick="afficher('O')">O</button>
-        <button class="btn btn-default" value="P" onclick="afficher('P')">P</button>
-        <button class="btn btn-default" value="Q" onclick="afficher('Q')">Q</button>
-        <button class="btn btn-default" value="R" onclick="afficher('R')">R</button>
-      
+            <button class="btn btn-default" value="K" onclick="afficher('K')">K</button>
+            <button class="btn btn-default" value="L" onclick="afficher('L')">L</button>
+            <button class="btn btn-default" value="M" onclick="afficher('M')">M</button>
+            <button class="btn btn-default" value="N" onclick="afficher('N')">N</button>
+            <button class="btn btn-default" value="O" onclick="afficher('O')">O</button>
+            <button class="btn btn-default" value="P" onclick="afficher('P')">P</button>
+            <button class="btn btn-default" value="Q" onclick="afficher('Q')">Q</button>
+            <button class="btn btn-default" value="R" onclick="afficher('R')">R</button>
 
-        <button class="btn btn-default" value="S" onclick="afficher('S')">S</button>
-        <button class="btn btn-default" value="T" onclick="afficher('T')">T</button>
-        <button class="btn btn-default" value="U" onclick="afficher('U')">U</button>
-        <button class="btn btn-default" value="V" onclick="afficher('V')">V</button>
-        <button class="btn btn-default" value="W" onclick="afficher('W')">W</button>
-        <button class="btn btn-default" value="X" onclick="afficher('X')">X</button>
-        <button class="btn btn-default" value="Y" onclick="afficher('Y')">Y</button>
-        <button class="btn btn-default" value="Z" onclick="afficher('Z')">Z</button>
-      </div>
+
+            <button class="btn btn-default" value="S" onclick="afficher('S')">S</button>
+            <button class="btn btn-default" value="T" onclick="afficher('T')">T</button>
+            <button class="btn btn-default" value="U" onclick="afficher('U')">U</button>
+            <button class="btn btn-default" value="V" onclick="afficher('V')">V</button>
+            <button class="btn btn-default" value="W" onclick="afficher('W')">W</button>
+            <button class="btn btn-default" value="X" onclick="afficher('X')">X</button>
+            <button class="btn btn-default" value="Y" onclick="afficher('Y')">Y</button>
+            <button class="btn btn-default" value="Z" onclick="afficher('Z')">Z</button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="col-md-6">
+
+      <div class="card text-center" style="width: 18rem;height: 18rem;margin-left: 300px">
+        <img src="http://jeudupendu.fr/images/pendus-default.png" class="card-img-top" alt="">
+
+
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;margin-left: 300px">
+      <span id="mots"></span>
+
+    </div>
+
+
   </div>
 
-  <div class="col-md-6">
-
-  <div class="card text-center" style="width: 18rem;height: 18rem;margin-left: 300px">
-    <img src="http://jeudupendu.fr/images/pendus-default.png" class="card-img-top" alt="">
-
-
-  </div>
-</div>
-
-
-  <div class="card" style="width: 18rem;margin-left: 300px">
-    <span id="mots"></span>
-
-  </div>
-
-
-</div>
 
 
 
@@ -86,18 +89,46 @@
 
 
 
+  <script>
+    function afficher(val) {
+      let elem = document.getElementById("mots")
+      console.log(val)
 
-<script>
+      document.getElementById("mots").innerHTML += val;
 
-  function afficher(val) {
-    let elem = document.getElementById("mots")
-    console.log(val)
+    }
 
-    document.getElementById("mots").innerHTML += val;
 
-  }
+      $.get("dico.json", function (data) {
 
+
+        var mots = data.mots
+
+        console.log(mots)
+
+        var mot = mots[Math.floor(Math.random() * mots.length)];
+          
+        console.log('The computer chose:' + mot);
+
+       
+
+        for (i = 0; i < mot.length; i++) {
+
+
+          document.getElementById("mots").innerHTML += "_" + "  ";
+
+          
+         
+
+
+        }
+
+
+
+      });
+    
   </script>
+
 </body>
 
 </html>
