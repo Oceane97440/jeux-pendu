@@ -17,7 +17,7 @@
      //console.log(sucess.includes(remplace));
 
      compteur_sucess++
-     document.getElementById("sucess").innerHTML = "Compteur win = " + compteur_sucess;
+     document.getElementById("sucess").innerHTML = "Compteur nombres de letrre trouvés = " + compteur_sucess + "/" +sucess.length;
 
      if (compteur_sucess == sucess.length) {
 
