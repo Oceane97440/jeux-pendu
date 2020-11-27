@@ -1,0 +1,11 @@
+button.btn.btn-default{
+    background-color: #67c2f747;
+}
+#pendu {
+    background-image: url('http://www.jeudupendu.fr/images/pendus-default.png');
+    width: 250px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin: auto;
+    border: 1px solid #DDDDDD;
+}

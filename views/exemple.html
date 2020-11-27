@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="public/css/style.css">
 
   <title>Jeux du Pendu</title>
 
@@ -64,13 +63,12 @@
 
     <div class="col-md-6">
 
-      <h6 id="compteur">Compteur perdu:</h6>
-
-      <div class="card text-center" style="width: 18rem;height: 18rem;margin-left: 300px">
-        <img src="http://jeudupendu.fr/images/pendus-default.png" class="card-img-top" alt="">
+      <h6 id="compteur">Compteur perdu = 0</h6>
+      <h6 id="sucess">Compteur win = 0</h6>
 
 
-      </div>
+      <div id="pendu"></div>
+
     </div>
 
 
@@ -87,125 +85,9 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  <script>
-    //compteur perdu
-    compteur_erreur = 0;
-
-
-    //fonction qui remplace la lettre dans le mot
-    function putLetter(letter, position) {
-
-      //console.log(position)
-
-      var tab_id_span = $(".underscore");
-
-      //console.log(tab_id_span);
-
-      tab_id_span[position].innerHTML = letter;
-    }
-
-
-    //function crée des _ selon la longeur du mot
-    function met_underscore(nombre) {
-      var span = Object();
-      for (var i = 0; i < nombre; i++) {
-
-        span = document.createElement("SPAN");
-
-        span.id = i;
-
-        span.setAttribute("class", "underscore");
-
-
-        span.innerHTML = " _ ";
-
-        document.getElementById("mots").appendChild(span);
-
-
-      }
-    }
-
-    $.get("dico.json", function (data) {
-
-
-      //recup la data du fichier json
-      var mots = data.mots
-
-      //Mot aléatoire
-      var mot = mots[Math.floor(Math.random() * mots.length)];
-
-      //si le mot à un longeur excute la function
-      if (mot.length > 0) {
-        met_underscore(mot.length);
-      }
-
-
-
-      //Ecoute event clic
-      const button = document.querySelectorAll('button.btn.btn-default');
-
-
-      button.forEach(element => {
-
-
-          element.addEventListener('click', function () {
-
-              const mon_mot = mot;
-
-              //event click choix de la lettre 
-              var lettre = element.innerHTML
-
-              //décompose le mot en lettre renvoie sous forme de tab ["M","O","T"]
-              const split_mot = mon_mot.split('');
-
-
-              //boucle sur longeur de la table
-              for (var i = 0; i < split_mot.length; i++) {
-
-
-                //si la lettre click est = à un des lettre du tableu
-                if (split_mot[i] == lettre) {
-
-                  //console.log(i)
-
-                  putLetter(lettre, i);
-
-
-                } else {
-
-                  //a ne pas faire a la maison 
-                  if (i + 1 == mot.length) {
-
-
-                    //détermine si la valeur est dans le tableau
-                    var perdu = split_mot.includes(lettre);
-
-                    //si la lettre n'est pas dans le mot le compteur demarre
-                  if (perdu == false) {
-
-                    compteur_erreur++
-                    document.getElementById("compteur").innerHTML = "Compteur perdu =" + compteur_erreur;
-
-
-                    console.log("pendu : " + compteur_erreur);
-                  }
-                }
-               
-              }
-
-
-
-            }
-
-          });
-
-      })
-
-
-
-    })
-  </script>
+  <script src="public/js/game.js"></script>
 
 </body>
 
