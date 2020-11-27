@@ -1,5 +1,9 @@
+body{
+    background-color: #160b42c4;
+}
 button.btn.btn-default{
-    background-color: #67c2f747;
+    border: 1px solid #5729e2;
+    color: #5729e2;
 }
 #pendu {
     background-image: url('http://www.jeudupendu.fr/images/pendus-default.png');
@@ -8,4 +12,26 @@ button.btn.btn-default{
     margin-bottom: 30px;
     margin: auto;
     border: 1px solid #DDDDDD;
+}
+
+div.btn-group.btn-group-sm{
+    margin: auto;
+    display: table;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+div.col-md-6{
+
+    display: contents;
+    text-align: center;
+}
+
+#mots{
+    font-size: large;
+    font-family: cursive
+}
+#compteur{
+    font-size: revert;
+    font-family: cursive;
 }
