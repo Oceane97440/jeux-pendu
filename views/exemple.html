@@ -20,71 +20,72 @@
       <div class="card-header">
         <h1>Jeu du pendu :</h1>
       </div>
-      
+
       <div class="card-body">
 
-      <p>Tentez de deviner le mot secret en entrant des lettres une par une au clavier. Ne gaspillez pas vos coups, car
-        si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.
+        <p>Tentez de deviner le mot secret en entrant des lettres une par une au clavier. Ne gaspillez pas vos coups,
+          car
+          si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.
 
-      </p>
-      <div class="btn-group btn-group-sm">
+        </p>
+        <div class="btn-group btn-group-sm">
 
-        <div class="rows">
-          <button class="btn btn-default" value="A">A</button>
-          <button class="btn btn-default" value="B">B</button>
-          <button class="btn btn-default" value="C">C</button>
-          <button class="btn btn-default" value="D">D</button>
-          <button class="btn btn-default" value="E">E</button>
-          <button class="btn btn-default" value="F">F</button>
-          <button class="btn btn-default" value="G">G</button>
-          <button class="btn btn-default" value="H">H</button>
-          <button class="btn btn-default" value="I">I</button>
-          <button class="btn btn-default" value="J">J</button>
+          <div class="rows">
+            <button class="btn btn-default" value="A">A</button>
+            <button class="btn btn-default" value="B">B</button>
+            <button class="btn btn-default" value="C">C</button>
+            <button class="btn btn-default" value="D">D</button>
+            <button class="btn btn-default" value="E">E</button>
+            <button class="btn btn-default" value="F">F</button>
+            <button class="btn btn-default" value="G">G</button>
+            <button class="btn btn-default" value="H">H</button>
+            <button class="btn btn-default" value="I">I</button>
+            <button class="btn btn-default" value="J">J</button>
 
-          <button class="btn btn-default" value="K">K</button>
-          <button class="btn btn-default" value="L">L</button>
-          <button class="btn btn-default" value="M">M</button>
-          <button class="btn btn-default" value="N">N</button>
-          <button class="btn btn-default" value="O">O</button>
-          <button class="btn btn-default" value="P">P</button>
-          <button class="btn btn-default" value="Q">Q</button>
-          <button class="btn btn-default" value="R">R</button>
+            <button class="btn btn-default" value="K">K</button>
+            <button class="btn btn-default" value="L">L</button>
+            <button class="btn btn-default" value="M">M</button>
+            <button class="btn btn-default" value="N">N</button>
+            <button class="btn btn-default" value="O">O</button>
+            <button class="btn btn-default" value="P">P</button>
+            <button class="btn btn-default" value="Q">Q</button>
+            <button class="btn btn-default" value="R">R</button>
 
 
-          <button class="btn btn-default" value="S">S</button>
-          <button class="btn btn-default" value="T">T</button>
-          <button class="btn btn-default" value="U">U</button>
-          <button class="btn btn-default" value="V">V</button>
-          <button class="btn btn-default" value="W">W</button>
-          <button class="btn btn-default" value="X">X</button>
-          <button class="btn btn-default" value="Y">Y</button>
-          <button class="btn btn-default" value="Z">Z</button>
+            <button class="btn btn-default" value="S">S</button>
+            <button class="btn btn-default" value="T">T</button>
+            <button class="btn btn-default" value="U">U</button>
+            <button class="btn btn-default" value="V">V</button>
+            <button class="btn btn-default" value="W">W</button>
+            <button class="btn btn-default" value="X">X</button>
+            <button class="btn btn-default" value="Y">Y</button>
+            <button class="btn btn-default" value="Z">Z</button>
+          </div>
         </div>
+
+
+
+        <div class="col-md-6">
+
+          <h6 id="compteur">Compteur perdu = 0</h6>
+
+          <h6 id="sucess">Compteur nombres de letrre trouvés = 0</h6>
+
+
+          <div id="mots"></div>
+
+
+
+          <div id="pendu"></div>
+
+
+
+
+        </div>
+
+
       </div>
-
-
-
-      <div class="col-md-6">
-
-        <h6 id="compteur">Compteur perdu = 0</h6>
-
-        <h6 id="sucess">Compteur nombres de letrre trouvés = 0</h6>
-
-
-        <div id="mots"></div>
-
-
-
-        <div id="pendu"></div>
-
-
-
-
-      </div>
-
-
     </div>
-  </div>
 
   </div>
 
@@ -93,8 +94,7 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="public/js/game.js"></script>
 
 </body>

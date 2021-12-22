@@ -6,7 +6,9 @@ button.btn.btn-default{
     color: #5729e2;
 }
 #pendu {
-    background-image: url('http://www.jeudupendu.fr/images/pendus-default.png');
+    /* background-image: url('http://www.jeudupendu.fr/images/pendus-default.png'); */
+    background-image: url('https://www.regles-jeux-plein-air.com/wp-content/uploads/2015/04/Le-Pendu.png');
+
     width: 250px;
     height: 300px;
     margin-bottom: 30px;

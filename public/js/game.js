@@ -47,7 +47,7 @@
      }
  }
 
- $.get("dico.json", function (data) {
+ $.get("http://localhost/jeux-pendu/dico.json", function (data) {
 
 
      //recup la data du fichier json
